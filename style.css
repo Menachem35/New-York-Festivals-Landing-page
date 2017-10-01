@@ -1,0 +1,330 @@
+@font-face {
+    font-family: 'Brandon-Grotesque-bold'; 
+	src: url('fonts/Brandon_bld.otf') format('opentype');
+
+	font-weight: bold;
+}
+
+@font-face {	   
+    font-family: 'Brandon-Grotesque-light';  
+    src: url('fonts/Brandon_light.otf') format('opentype');
+	
+	font-weight: light;
+}
+
+@font-face {		
+	font-family: 'Brandon_reg';
+    src: url('fonts/Brandon_reg.otf') format('opentype');
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo700-Regular';
+    src: url('fonts/museo_700_macroman/Museo700-Regular-webfont.woff2') format('woff2'),
+         url('fonts/museo_700_macroman/Museo700-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Museo300-Regular';
+    src: url('fonts/museo_300_macroman/Museo300-Regular-webfont.woff2') format('woff2'),
+         url('fonts/museo_300_macroman/museo_300_macromanMuseo300-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+html, body {
+    height: 100%;
+ 
+	margin: 0; padding: 0;
+	
+	/*background-color: rgba(236,189,5, 0.7) !important;*/
+	
+	background: url(images/nyf-2.jpg) no-repeat center center fixed;
+	
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	
+	/* Fade in / Fade Out effect */
+	opacity: 1.0;
+	-webkit-transition: background 1.5s linear;
+	-moz-transition: background 1.5s linear;
+	-o-transition: background 1.5s linear;
+	-ms-transition: background 1.5s linear;
+	transition: background 1.5s linear;
+}
+
+
+/* change navbar background */
+nav.navbar {
+  background: transparent !important;
+
+}
+ 
+/*  change navbar li colors, also active one but not disabled one */
+.navbar ul.navbar-nav li.nav-item a.nav-link {
+  color: white;
+  background-color: rgba(236,189,5, 0.7) !important;
+  
+}
+
+/* change hamburger button border color */
+button.navbar-toggler.navbar-toggler-right {
+  border-color: yellow;
+}
+
+p {
+	color: white;
+	text-align: justify;
+}
+
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: white !important;
+	text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: white;
+	text-decoration: none;
+}
+
+.mainRow{height: 100%;}
+
+.mainAreaRow {height: 25%;}
+.logoRow {height: 25%; padding: 2% 18% 0 18%;}
+.logoRowLinks {height: 25%; padding: 7% 14% 0 14%;}
+.textRow {height: 40%; padding: 0 14% 5% 14%;}
+.socialIconsRow {height: 10%;}
+
+.logoSection {margin: 0 !important; padding: 0 !important; }
+.NYFlogo {width: 110px; height: 110px; margin-bottom: 20px;}
+.NYFlogoText, .NYFlogoTextBold, .NYFlogoText1, .NYFlogoText2, .NYFlogoText3, .NYFlogoText4, .NYFlogoText5  {
+	color: white;
+	display: inline-block;
+	line-height: 0.75em;
+	
+}
+
+.NYFlogoText, .NYFlogoTextBold, .NYFlogoText1, .NYFlogoText2 {
+	font-style: normal;  
+	color: white;
+}
+
+.NYFlogoTextBold, .NYFlogoText {font-size: calc(14px + 2.2vw);  letter-spacing: 4px;}
+
+.NYFlogoTextBold {font-family: 'Museo700-Regular';}
+.NYFlogoText  {font-family: 'Museo300-Regular';}
+.NYFlogoText1 {font-family: 'Museo700-Regular'; font-size: 20pt;}
+.NYFlogoText2 {font-family: 'Museo300-Regular'; font-weight: 500; font-size: 20pt;}
+.NYFlogoText3 {font-family: 'Brandon-Grotesque-bold', sans-serif; font-size: calc(14px + 2.4vw); }
+.NYFlogoText4 {font-family: 'Brandon-Grotesque-light', sans-serif; font-size: calc(14px + 2.4vw); font-weight: light; }
+.NYFlogoText5 {font-size: calc(9px + 0.4vw); letter-spacing: 1.2px;}
+
+.sideLinks {
+	font-size: calc(8px + 0.8vw) !important;
+	font-family: 'Brandon-Grotesque-bold', Fallback, sans-serif;
+}
+
+.sideLinksLight {
+	font-family: 'Brandon-Grotesque-light', Fallback, sans-serif;
+}
+
+.mainContainer {
+	height: inherit;
+	
+	/*background: 
+    /* top, transparent yellow */ 
+   /* linear-gradient(
+      rgba(236,189,5, 0.7), 
+      rgba(236,189,5, 0.7)
+    ),
+    /* bottom, image */
+    
+}
+
+.leftLinkArea, .rightLinkArea {
+	height: 100%;
+}
+.leftLinkArea {
+	border-right: 2px solid rgba(255,255,255, 0.3);
+}
+
+.rightLinkArea {
+	border-left: 2px solid rgba(255,255,255, 0.3);
+}
+
+.linkAreaBox { 
+	height: 33%;
+	border-bottom: 2px solid rgba(255,255,255, 0.3);
+	
+}
+
+/* Background Effect when hover on links */
+div.linkAreaBox:hover, div.linkAreaBox_bottom:hover {background: rgba(255, 255, 255, 0.3);}
+
+.linkAreaBox_bottom {
+	height: 33%;
+	border-bottom: none;
+}
+
+
+
+.socialIcons {width: 50px; height: 50px;}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 321px) {
+	
+	.mainAreaRow {height: 5%;}
+	.logoRow {height: 25%; padding: 2% 5px 0 5px;}
+	.logoRowLinks {height: 25%; padding: 7% 5px 0 5px;}
+	.textRow {height: 80%; padding: 0 5px 5% 5px;}
+	.socialIconsRow {height: 10%;}
+	
+	.NYFlogo {width: 70px; height: 70px;}
+	
+	.mainText {padding: 2% 2% 5% 2%;}
+	
+	.NYFlogoTextBold, .NYFlogoText {letter-spacing: 7px;}
+	.NYFlogoText5 {letter-spacing: 0;}
+	
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+	
+	.mainText {padding: 2% 2% 5% 2%;}
+	
+	.mainAreaRow {height: 5%;}
+	.logoRow {height: 25%; padding: 2% 5px 0 5px;}
+	.logoRowLinks {height: 25%; padding: 7% 1px 0 1px;}
+	.textRow {height: 80%; padding: 0 1px 5% 1px;}
+	.socialIconsRow {height: 10%;}
+	
+	.NYFlogo {width: 70px; height: 70px;}
+	
+	.NYFlogoTextBold, .NYFlogoText {letter-spacing: 7px;}
+	.NYFlogoText5 {letter-spacing: 0; line-height: 15px;}
+	
+}
+
+/* --- Extra small devices portrait phones, less than 544px --- */
+@media (max-width: 543px) {
+
+	
+	.mainText {padding: 2% 5% 5% 5%;}
+	
+	.mainAreaRow {height: 5%;}
+	.logoRow {height: 25%; padding: 2% 5px 0 5px;}
+	.logoRowLinks {height: 25%; padding: 7% 5px 0 5px;}
+	.textRow {height: 80%; padding: 0 5px 5% 5px;}
+	.socialIconsRow {height: 10%;}
+	
+	.NYFlogo {width: 70px; height: 70px;}
+	
+	.NYFlogoTextBold, .NYFlogoText {letter-spacing: 7px;}
+	.NYFlogoText5 {letter-spacing: 0; line-height: 15px;}
+}
+
+/* --- Small devices (landscape phones, 544px and up) --- */
+@media (min-width: 544px) and (max-width: 767px) {
+	
+	.mainAreaRow {height: 5%;}
+	.logoRow {height: 25%; padding: 2% 12px 0 12px;}
+	.logoRowLinks {height: 25%; padding: 7% 12px 0 12px;}
+	.textRow {height: 50%; padding: 0 12% 5% 12%;}
+	.socialIconsRow {height: 5%;}
+	
+	.mainText {padding: 2% 2% 5% 2%;}
+	
+	.NYFlogo {width: 60px; height: 60px;}
+	.NYFlogoTextBold, .NYFlogoText {letter-spacing: 6px;}
+	.NYFlogoText5 {letter-spacing: 0;}
+	
+}
+
+
+/* --- Medium devices (tablets, 768px and up) --- */
+@media (min-width: 768px) and (max-width: 991px) {
+	 
+	.socialIcons {width: 30px; height: 30px;}
+	
+	
+	.mainAreaRow {height: 15%;}
+	.logoRow {height: 25%; padding: 2% 10px 0 5px;}
+	.logoRowLinks {height: 25%; padding: 7% 1px 0 1px;}
+	.textRow {height: 50%; padding: 0 1px 5% 1px;}
+	.socialIconsRow {height: 10%;}
+	
+	.mainText {padding: 2% 2% 5% 2%;}
+
+	.socialIconsRow {height: 5%;}
+	
+	.NYFlogo {width: 60px; height: 60px;}
+	
+	
+	.NYFlogoText5 {letter-spacing: 0;}
+	
+}
+  
+ 
+/* --- Large devices (desktops, 992px and up) --- */
+@media (min-width: 992px) and (max-width: 1199px) { 
+	
+	.mainAreaRow {height: 25%;}
+	.logoRow {height: 25%; padding: 2% 2% 0 2%;;}
+	.logoRowLinks {height: 25%; padding: 7% 2% 0 2%;}
+	.textRow {height: 40%; padding: 0 2% 5% 2%;}
+	.socialIconsRow {height: 10%;}
+	
+	.NYFlogo {width: 60px; height: 60px;}
+	
+	.mainText {padding: 2% 2% 5% 2%;}
+	
+	.socialIcons {width: 30px; height: 30px;}
+	 
+	.NYFlogoText5 {letter-spacing: 0.2px;}
+	
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+{
+	.socialIcons {width: 30px; height: 30px;}
+	.NYFlogo {width: 80px; height: 80px;}
+	
+}
+
+/* --- Large devices (desktops, 1200px to 1575px) --- */
+@media (min-width: 1200px) and (max-width: 1575px) { 
+	.socialIcons {width: 30px; height: 30px;}
+	.NYFlogo {width: 70px; height: 70px;}
+	
+	.NYFlogoText5 {letter-spacing: 0.5px;}
+}
+ 
+
+
+
+
